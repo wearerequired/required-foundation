@@ -7,6 +7,7 @@ required+ Foundation is a responsive parent theme for WordPress based on the fan
 * Documentation:      http://themes.required.ch/docs/
 * News & Tutorials:   http://themes.required.ch/news/
 * Download:           http://themes.required.ch/download/
+* Changelog:          http://themes.required.ch/docs/support/#changelog
 
 We would like to thank [WordPress](http://wordpress.org) and [ZURB](http://zurb.com) for constantly pushing the boundaries and creating awesome stuff we all benefit from. required+ Foundation wouldn't be possible without all the fantastic people out there. required+ Foundation is under GPL, except for the parts from Foundation which are licensed under MIT, so yes it's free to use. Go and build something new!
 
