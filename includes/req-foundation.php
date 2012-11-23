@@ -7,21 +7,6 @@
  */
 
 /**
- * Remove <p> tags from images in WordPress
- * Courtesy of Interconnectit http://interconnectit.com/2175/how-to-remove-p-tags-from-images-in-wordpress/
- *
- * @since  required+ Foundation 0.1.0
- *
- * @param  string $pee
- * @return string
- */
-function required_img_unautop( $pee ) {
-    $pee = preg_replace( '/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '<figure>$1</figure>', $pee );
-    return $pee;
-}
-add_filter( 'the_content', 'required_img_unautop', 30 );
-
-/**
  * Display the list for paginated links according to ZURB Foundation
  * Code from: http://themefortress.com/reverie/
  *
