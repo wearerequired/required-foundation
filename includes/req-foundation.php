@@ -27,8 +27,8 @@ function required_pagination() {
 		'total' => $wp_query->max_num_pages,
 		'mid_size' => 5,
 		'prev_next' => True,
-	    'prev_text' => __('&laquo;'),
-	    'next_text' => __('&raquo;'),
+	    'prev_text' => __( '&laquo;', 'requiredfoundation' ),
+	    'next_text' => __( '&raquo;', 'requiredfoundation' ),
 		'type' => 'list'
 	) );
 

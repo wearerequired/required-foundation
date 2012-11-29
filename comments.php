@@ -73,34 +73,34 @@
 
 	<?php if ( comments_open() ) : ?>
 <section id="respond">
-	<h3><?php comment_form_title( __('Leave a Reply', 'required'), __('Leave a Reply to %s', 'required') ); ?></h3>
+	<h3><?php comment_form_title( __('Leave a Reply', 'requiredfoundation' ), __('Leave a Reply to %s', 'requiredfoundation' ) ); ?></h3>
 	<p class="cancel-comment-reply"><?php cancel_comment_reply_link(); ?></p>
 	<?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
-	<p><?php printf( __('You must be <a href="%s">logged in</a> to post a comment.', 'required'), wp_login_url( get_permalink() ) ); ?></p>
+	<p><?php printf( __('You must be <a href="%s">logged in</a> to post a comment.', 'requiredfoundation' ), wp_login_url( get_permalink() ) ); ?></p>
 	<?php else : ?>
 	<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 		<?php if ( is_user_logged_in() ) : ?>
-		<p><?php printf(__('Logged in as <a href="%s/wp-admin/profile.php">%s</a>.', 'required'), get_option('siteurl'), $user_identity); ?> <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php __('Log out of this account', 'required'); ?>"><?php _e('Log out &raquo;', 'required'); ?></a></p>
+		<p><?php printf(__('Logged in as <a href="%s/wp-admin/profile.php">%s</a>.', 'requiredfoundation' ), get_option('siteurl'), $user_identity); ?> <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php __('Log out of this account', 'requiredfoundation' ); ?>"><?php _e('Log out &raquo;', 'requiredfoundation' ); ?></a></p>
 		<?php else : ?>
 		<p>
-			<label for="author"><?php _e('Name', 'required'); if ($req) _e(' (required)', 'required'); ?></label>
+			<label for="author"><?php _e('Name', 'requiredfoundation' ); if ($req) _e(' (required)', 'requiredfoundation' ); ?></label>
 			<input type="text" class="input-text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?>>
 		</p>
 		<p>
-			<label for="email"><?php _e('Email (will not be published)', 'required'); if ($req) _e(' (required)', 'required'); ?></label>
+			<label for="email"><?php _e('Email (will not be published)', 'requiredfoundation' ); if ($req) _e(' (required)', 'requiredfoundation' ); ?></label>
 			<input type="email" class="input-text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?>>
 		</p>
 		<p>
-			<label for="url"><?php _e('Website', 'required'); ?></label>
+			<label for="url"><?php _e('Website', 'requiredfoundation' ); ?></label>
 			<input type="url" class="input-text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" tabindex="3">
 		</p>
 		<?php endif; ?>
 		<p>
-			<label for="comment"><?php _e('Comment', 'required'); ?></label>
+			<label for="comment"><?php _e('Comment', 'requiredfoundation' ); ?></label>
 			<textarea name="comment" id="comment" tabindex="4"></textarea>
 		</p>
-		<p id="allowed_tags" class="small"><?php _e('You can use these tags: ', 'required'); ?><code><?php echo allowed_tags(); ?></code></p>
-		<p><input name="submit" class="<?php echo esc_attr( apply_filters( 'req_comment_button_classes', 'button' ) ); ?>" type="submit" id="submit" tabindex="5" value="<?php _e('Submit Comment', 'required'); ?>"></p>
+		<p id="allowed_tags" class="small"><?php _e('You can use these tags: ', 'requiredfoundation' ); ?><code><?php echo allowed_tags(); ?></code></p>
+		<p><input name="submit" class="<?php echo esc_attr( apply_filters( 'req_comment_button_classes', 'button' ) ); ?>" type="submit" id="submit" tabindex="5" value="<?php _e('Submit Comment', 'requiredfoundation' ); ?>"></p>
 		<?php comment_id_fields(); ?>
 		<?php do_action('comment_form', $post->ID); ?>
 	</form>
