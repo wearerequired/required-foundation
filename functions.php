@@ -39,7 +39,7 @@
 
 if ( ! defined( '__DIR__' ) ) define( '__DIR__' , dirname( __FILE__ ) );
 
-define( 'FOUNDATION_VERSION', '3.2.2' ); 	// Version of ZURB Foundation
+define( 'FOUNDATION_VERSION', '3.2.4' ); 	// Version of ZURB Foundation
 
 if ( ! isset( $content_width ) )
 	$content_width = 657;
