@@ -284,3 +284,30 @@ function required_side_nav( $nav_args = '' ) {
     }
 }
 endif;
+
+/**
+ * Remove .sticky from the post_class array
+ *
+ * Since version 3.2.4 Foundation uses a class named
+ * sticky to create a sticky top-bar navigation. WordPress
+ * uses sticky for the Sticky Post feature with the same
+ * class. Now you have sticky-post instead so Foundation
+ * doesn't get hickups.
+ *
+ * @param  array $classes Array of CSS classes
+ * @return array $classes Cleaned arrar of CSS classes
+ *
+ * @since required+ Foundation 1.0.5
+ */
+function required_filter_post_class( $classes ) {
+
+    if ( ( $key = array_search( 'sticky', $classes ) ) !== false ) {
+
+        unset( $classes[$key] );
+        $classes[] = 'sticky-post';
+
+    }
+
+    return $classes;
+}
+add_filter( 'post_class', 'required_filter_post_class', 20 );

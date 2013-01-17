@@ -19,6 +19,15 @@ As mentioned above, in addition to the parent theme there is a sample child them
 * required+ Starter (sample child theme): https://github.com/wearerequired/required-starter
 * required+ Shortcode Plugins: https://github.com/wearerequired/required-foundation-shortcodes
 
+Contributors
+============
+
+Like every open project, we are happy that people are willing to offer time and code to create translations, test new version and so much more. Here are the people who did contribute so far:
+
+* Portuguese (Brazilian) pt_BR translation files from @raphaelsuzuki
+
+Thank you for contribution, if you think you belong on the list too, please contact us.
+
 required+
 =========
 
