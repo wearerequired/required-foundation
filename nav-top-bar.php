@@ -12,7 +12,6 @@
 ?>
             <!-- START: nav-top-bar.php -->
             <!-- <div class="contain-to-grid"> // enable to contain to grid -->
-            <div class="contain-to-grid sticky">
                 <nav class="top-bar">
                     <ul>
                         <li class="name"><h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></h1></li>
@@ -33,6 +32,5 @@
                     ?>
                     </section>
                 </nav>
-            </div>
             <!-- </div> -->
             <!-- END: nav-top-bar.php -->
