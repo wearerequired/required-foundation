@@ -26,7 +26,7 @@ Like every open project, we are happy that people are willing to offer time and 
 
 * Portuguese (Brazilian) pt_BR translation files from [raphaelsuzuki](https://github.com/raphaelsuzuki)
 
-Thank you for contribution, if you think you belong on the list too, please contact us.
+Thank you for your contribution, if you think you belong on the list too, please contact us.
 
 required+
 =========

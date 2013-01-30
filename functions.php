@@ -39,7 +39,7 @@
 
 if ( ! defined( '__DIR__' ) ) define( '__DIR__' , dirname( __FILE__ ) );
 
-define( 'FOUNDATION_VERSION', '3.2.4' ); 	// Version of ZURB Foundation
+define( 'FOUNDATION_VERSION', '3.2.5' ); 	// Version of ZURB Foundation
 
 if ( ! isset( $content_width ) )
 	$content_width = 657;
@@ -501,7 +501,7 @@ function required_archive_title () {
 		</header>
 		<?php endif;
 	}
-	if ( is_archive() ) { ?>
+	if ( is_archive() && !is_category() && !is_tag() ) { ?>
 		<header class="page-header">
 			<h3 class="page-title">
 				<?php if ( is_day() ) : ?>
