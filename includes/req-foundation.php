@@ -158,14 +158,20 @@ class REQ_Foundation_Walker extends Walker_Nav_Menu {
 			}
 
 		}
-
+        /**
+         * Add class names to the li.divider from parent menu item
+         * @var string
+         *
+         * @since  required+ Foundation 1.0.7
+         */
+        $class_names_divider = join( ' ', $item->classes );
 		$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
 		$class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
 
 		if ( $depth > 0 ) {
 			$output .= $indent . '<li id="menu-item-'. $item->ID . '"' . $value . $class_names .'>';
 		} else {
-			$output .= $indent . ( $this->nav_bar['in_top_bar'] == true ? '<li class="divider"></li>' : '' ) . '<' . $this->nav_bar['item_type'] . ' id="menu-item-'. $item->ID . '"' . $value . $class_names .'>';
+			$output .= $indent . ( $this->nav_bar['in_top_bar'] == true ? '<li class="divider' . $class_names_divider . '"></li>' : '' ) . '<' . $this->nav_bar['item_type'] . ' id="menu-item-'. $item->ID . '"' . $value . $class_names .'>';
 		}
 
 		$attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
