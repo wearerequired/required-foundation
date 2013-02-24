@@ -171,7 +171,7 @@ class REQ_Foundation_Walker extends Walker_Nav_Menu {
 		if ( $depth > 0 ) {
 			$output .= $indent . '<li id="menu-item-'. $item->ID . '"' . $value . $class_names .'>';
 		} else {
-			$output .= $indent . ( $this->nav_bar['in_top_bar'] == true ? '<li class="divider' . $class_names_divider . '"></li>' : '' ) . '<' . $this->nav_bar['item_type'] . ' id="menu-item-'. $item->ID . '"' . $value . $class_names .'>';
+			$output .= $indent . ( $this->nav_bar['in_top_bar'] == true ? '<li class="divider ' . $class_names_divider . '"></li>' : '' ) . '<' . $this->nav_bar['item_type'] . ' id="menu-item-'. $item->ID . '"' . $value . $class_names .'>';
 		}
 
 		$attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';

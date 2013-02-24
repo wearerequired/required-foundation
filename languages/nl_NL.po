@@ -1,0 +1,452 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: required+ foundation theme\n"
+"POT-Creation-Date: 2013-02-18 20:04+0100\n"
+"PO-Revision-Date: 2013-02-18 23:15+0100\n"
+"Last-Translator: MekZii <ilyes.ahidar@gmail.com>\n"
+"Language-Team: \n"
+"Language: Dutch\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:19
+msgid "404 &ndash; What have you done? You broke the internet!"
+msgstr "404 &ndash; Wat heb je gedaan? Je hebt het internet stuk gemaakt!"
+
+#: 404.php:26
+msgid ""
+"The page you are looking for is gone. Perhaps searching or one of the links "
+"below will get you back on track."
+msgstr ""
+"De pagina kan helaas niet gevonden worden. Misschien dat zoek-functie of een "
+"van de onderstaande links je weer op pad kan helpen."
+
+#: 404.php:37
+msgid "Most Used Categories"
+msgstr "Meest gebruikte categorieën"
+
+#: 404.php:45
+msgid "Try looking in the monthly archives."
+msgstr "Probeer te kijken in de maandelijkse archieven."
+
+#: comments.php:16
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+"Dit bericht is beveiligd met een wachtwoord. Vul de wachtwoord in om de "
+"reacties te zien."
+
+#: comments.php:39 comments.php:59
+msgid "Comment navigation"
+msgstr "Reactie menu"
+
+#: comments.php:40 comments.php:60
+msgid "&larr; Older Comments"
+msgstr "&larr; Oudere reacties"
+
+#: comments.php:41 comments.php:61
+msgid "Newer Comments &rarr;"
+msgstr "Nieuwere reacties &rarr;"
+
+#: comments.php:71
+msgid "Comments are closed."
+msgstr "Reacties zijn gesloten."
+
+#: comments.php:76
+msgid "Leave a Reply"
+msgstr "Plaats een reactie"
+
+#: comments.php:76
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Plaats een reactie aan %s"
+
+#: comments.php:79
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Je moet je <a href=\"%s\">aanmelden</a> om een reactie te plaatsen."
+
+#: comments.php:83
+#, php-format
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr "Ingelogd als <a href=\"%s/wp-admin/profile.php\">%s</a>."
+
+#: comments.php:83
+msgid "Log out of this account"
+msgstr "Dit account uitloggen"
+
+#: comments.php:83
+msgid "Log out &raquo;"
+msgstr "Uitloggen &raquo;"
+
+#: comments.php:86
+msgid "Name"
+msgstr "Naam"
+
+#: comments.php:86 comments.php:90
+msgid " (required)"
+msgstr "(verplicht)"
+
+#: comments.php:90
+msgid "Email (will not be published)"
+msgstr "Email (wordt niet weergegeven)"
+
+#: comments.php:94
+msgid "Website"
+msgstr "Website"
+
+#: comments.php:99
+msgid "Comment"
+msgstr "Reactie"
+
+#: comments.php:102
+msgid "You can use these tags: "
+msgstr "Je kan deze tags gebruiken:"
+
+#: comments.php:103
+msgid "Submit Comment"
+msgstr "Plaats reactie"
+
+#: content-image.php:18 content-link.php:18 content-quote.php:17
+#: content-status.php:20 content.php:35
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Verder lezen <span class=\"meta-nav\">&rarr;</span>"
+
+#: content-none.php:12
+msgid "Nothing Found"
+msgstr "Niks gevonden"
+
+#: content-none.php:16
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+"Sorry, maar er zijn geen resultaten gevonden in het archief. Probeer de zoek-"
+"functie eens uit."
+
+#: content-page.php:16 content.php:36 image.php:89
+msgid "Pages:"
+msgstr "Pagina's:"
+
+#: content-status.php:12 content.php:17
+#, php-format
+msgid "Permalink to %s"
+msgstr "Permalink naar %s"
+
+#: entry-meta.php:17 entry-meta.php:27
+msgid ", "
+msgstr ","
+
+#: entry-meta.php:21
+#, php-format
+msgid "<span class=\"%1$s\">Posted in</span> %2$s"
+msgstr "<span class=\"%1$s\">Geplaatst in</span> %2$s"
+
+#: entry-meta.php:33
+#, php-format
+msgid "<span class=\"%1$s\">Tagged</span> %2$s"
+msgstr "<span class=\"%1$s\">Tagged</span> %2$s"
+
+#: entry-meta.php:43
+msgid "Leave a reply"
+msgstr "Laat een reactie achter"
+
+#: entry-meta.php:43
+msgid "<b>1</b> Reply"
+msgstr "<b>1</b> Reactie"
+
+#: entry-meta.php:43
+msgid "<b>%</b> Replies"
+msgstr "<b>%</b> Reacties"
+
+#: entry-meta.php:56
+#, php-format
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Laat alle berichten zien van %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: footer.php:25
+msgid "http://wordpress.org/"
+msgstr "http://nl.wordpress.org/"
+
+#: footer.php:25
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Vol trots mede mogelijk gemaakt door %s"
+
+#: functions.php:92
+msgid ""
+"<p>This site runs on the <a href=\"http://themes.required.ch/\" title="
+"\"required+ Themes\">required+ Foundation</a> Theme. Based on the awesome <a "
+"href=\"http://foundation.zurb.com/\" title=\"Rapid prototyping and building "
+"library from ZURB.\">Foundation</a> Framework by the humble folks at <a href="
+"\"http://www.zurb.com/\" title=\"Design for people\">ZURB</a>.</p>"
+msgstr ""
+"Deze website draait op de <a href=\"http://themes.required.ch/\" title="
+"\"required+ Themes\">required+ Foundation</a> Theme. Gebasseerd op de "
+"geweldige <a href=\"http://foundation.zurb.com/\" title=\"Rapid prototyping "
+"and building library from ZURB.\">Foundation</a> Framework van de bescheiden "
+"mensen van <a href=\"http://www.zurb.com/\" title=\"Design for people"
+"\">ZURB</a>.</p>"
+
+#: functions.php:140
+msgid "Primary Menu"
+msgstr "Primaire Menu"
+
+#: functions.php:141
+msgid "Secondary Menu"
+msgstr "Secundaire Menu"
+
+#: functions.php:182
+#, php-format
+msgid "Page %s"
+msgstr "Pagina %s"
+
+#: functions.php:205
+msgid "&hellip; Continue reading &rarr;"
+msgstr "&hellip; Lees verder &rarr;"
+
+#: functions.php:237
+msgid "Main Sidebar"
+msgstr "Hoofd Zijbalk"
+
+#: functions.php:246
+msgid "Footer Area One"
+msgstr "Voetgebied een"
+
+#: functions.php:248 functions.php:258 functions.php:268
+msgid "An optional widget area for your site footer"
+msgstr "Een optionele widget voetgebied voor je website"
+
+#: functions.php:256
+msgid "Footer Area Two"
+msgstr "Voetgebied twee"
+
+#: functions.php:266
+msgid "Footer Area Three"
+msgstr "Voetgebied drie"
+
+#: functions.php:285
+msgid "Post navigation"
+msgstr "Berichten menu"
+
+#: functions.php:351
+msgid "Pingback:"
+msgstr "Pinkback:"
+
+#: functions.php:351 functions.php:385
+msgid "Edit"
+msgstr "Aanpassen"
+
+#: functions.php:366
+#, php-format
+msgid "<h6>%1$s on %2$s <span class=\"says\">said:</span></h6>"
+msgstr "<h6>%1$s op %2$s <span class=\"says\">zegt:</span></h6>"
+
+#: functions.php:372
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s op %2$s"
+
+#: functions.php:380
+msgid "Your comment is awaiting moderation."
+msgstr "Jouw reactie wacht op goedkeuring door de admin."
+
+#: functions.php:388
+msgid "Reply <span>&darr;</span>"
+msgstr "Reageer <span>&darr;</span>"
+
+#: functions.php:406
+#, php-format
+msgid ""
+"<h6>Posted by <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s"
+"\" title=\"%6$s\" rel=\"author\">%7$s</a></span> on <a href=\"%1$s\" title="
+"\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" "
+"pubdate>%4$s</time></a></h6>"
+msgstr ""
+"<h6>Geplaatst door <span class=\"author vcard\"><a class=\"url fn n\" href="
+"\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span> op <a href=\"%1$s\" "
+"title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" "
+"pubdate>%4$s</time></a></h6>"
+
+#: functions.php:459
+#, php-format
+msgid "Category Archives: %s"
+msgstr "Categorie archief: %s"
+
+#: functions.php:474
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "Tag archief: %s"
+
+#: functions.php:489 functions.php:500
+#, php-format
+msgid "Author Archives: %s"
+msgstr "Auteur archief: %s"
+
+#: functions.php:494
+#, php-format
+msgid "About %s"
+msgstr "Over %s"
+
+#: functions.php:508
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Dagelijkse archief: %s"
+
+#: functions.php:510
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Maandelijks archief: %s"
+
+#: functions.php:512
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Jaarlijkse archief: %s"
+
+#: functions.php:514
+msgid "Blog Archives"
+msgstr "Blog archief"
+
+#: functions.php:522
+#, php-format
+msgid "Search Results for: %s"
+msgstr "De zoek resultaten voor: %s"
+
+#: image.php:25
+#, php-format
+msgid ""
+"<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class="
+"\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></span> "
+"at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> "
+"in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%7$s</a>"
+msgstr ""
+"<span class=\"meta-prep meta-prep-entry-date\">Gepubliseerd </span> <span "
+"class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></"
+"span> op <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; "
+"%5$s</a> in <a href=\"%6$s\" title=\"Terug naar %7$s\" rel=\"gallery\">%7$s</"
+"a>"
+
+#: image.php:40
+msgid "Image navigation"
+msgstr "Foto menu"
+
+#: image.php:41
+msgid "&larr; Previous"
+msgstr "&larr; Vorige"
+
+#: image.php:42
+msgid "Next &rarr;"
+msgstr "Volgende &rarr;"
+
+#: searchform.php:11
+msgid "Search for:"
+msgstr "Zoek naar:"
+
+#: searchform.php:14 searchform.php:17
+msgid "Search"
+msgstr "Zoek"
+
+#: sidebar.php:15
+msgid "There are no widgets yet!"
+msgstr "Er zijn nog geen widgets!"
+
+#: sidebar.php:16
+msgid ""
+"Please add some real widgets, because otherwise your visitors get nothing "
+"but whitespace here."
+msgstr ""
+"Voeg alstublieft wat widgets toe, anders krijgen uw bezoekers hier alleen "
+"witruimte te zien."
+
+#: sidebar.php:17
+msgid "Add widgets"
+msgstr "Voeg widgets toe"
+
+#: includes/req-foundation.php:30
+msgid "&laquo;"
+msgstr "&laquo;"
+
+#: includes/req-foundation.php:31
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: includes/req-foundation.php:53
+#, php-format
+msgid ""
+"Please assign a menu to the primary menu location under %1$s or %2$s the "
+"design."
+msgstr ""
+"Voeg alstublieft een menu toe aan de primaire menu locatie in %1$s of %2$s "
+"de design."
+
+#: includes/req-foundation.php:54
+#, php-format
+msgid "<a href=\"%s\">Menus</a>"
+msgstr "<a href=\"%s\">menu's</a>"
+
+#: includes/req-foundation.php:57
+#, php-format
+msgid "<a href=\"%s\">Customize</a>"
+msgstr "<a href=\"%s\">bewerk</a>"
+
+#: includes/req-foundation.php:267
+msgid "&larr; Home"
+msgstr "&larr; Voorpagina"
+
+#: includes/req-mce.php:58
+msgid "Button"
+msgstr "Button"
+
+#: includes/req-mce.php:64
+msgid "Lead Paragraph"
+msgstr "Eerste paragraaf"
+
+#: includes/req-mce.php:69
+msgid "Label"
+msgstr "Label"
+
+#: includes/req-mce.php:74
+msgid "Panel"
+msgstr "Panel"
+
+#: includes/req-mce.php:80
+msgid "Panel callout"
+msgstr "Panel oproep"
+
+#: includes/req-mce.php:87
+msgid "Radius (Panel, Label, Button)"
+msgstr "Radius (Panel, Label, Button)"
+
+#: includes/req-mce.php:93
+msgid "Round (Label, Button)"
+msgstr "Round (Label, Button)"
+
+#: includes/req-mce.php:99
+msgid "Alert (Label, Button)"
+msgstr "Waarschuwing (Label, Button)"
+
+#: includes/req-mce.php:104
+msgid "Success (Label, Button)"
+msgstr "Succesvol (Label, Button)"
+
+#: includes/req-mce.php:109
+msgid "Secondary (Label, Button)"
+msgstr "Secundaire (Label, Button)"
+
+#: includes/req-mce.php:114
+msgid "Subheader (Headings)"
+msgstr "Subkop (Koppen)"
+
+#: includes/req-mce.php:119
+msgid "Keyboard CMD"
+msgstr "Toetsenbord CMD"
+
+#: page-templates/off-canvas-page.php:20
+msgid "Menu"
+msgstr "Menu"
