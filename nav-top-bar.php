@@ -14,7 +14,7 @@
             <!-- <div class="contain-to-grid"> // enable to contain to grid -->
                 <nav class="top-bar">
                     <ul>
-                        <li class="name"><h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></h1></li>
+                        <li class="name"><h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1></li>
                         <li class="toggle-topbar"><a href="#"></a></li>
                     </ul>
                     <section>
