@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: required+ Foundation v1.0.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-02-10 16:21-0600\n"
+"PO-Revision-Date: 2013-02-26 10:06-0600\n"
 "Last-Translator: Joaquín González <gilkudik@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -82,13 +82,13 @@ msgstr "Los comentarios están cerrados."
 # @ requiredfoundation
 #: comments.php:76
 msgid "Leave a Reply"
-msgstr "Deja una respuesta"
+msgstr "Deja un comentario"
 
 # @ requiredfoundation
 #: comments.php:76
 #, php-format
 msgid "Leave a Reply to %s"
-msgstr "Deja una respuesta a %s"
+msgstr "Deja un comentario a %s"
 
 # @ requiredfoundation
 #: comments.php:79
@@ -231,17 +231,17 @@ msgstr "<span class=\"%1$s\">Etiquetado</span> %2$s"
 # @ requiredfoundation
 #: entry-meta.php:43
 msgid "Leave a reply"
-msgstr "Deja una respuesta"
+msgstr "Deja un comentario"
 
 # @ requiredfoundation
 #: entry-meta.php:43
 msgid "<b>1</b> Reply"
-msgstr "<b>1</b> Respuesta"
+msgstr "<b>1</b> Comentario"
 
 # @ requiredfoundation
 #: entry-meta.php:43
 msgid "<b>%</b> Replies"
-msgstr "<b>%</b> Respuestas"
+msgstr "<b>%</b> Comentarios"
 
 # @ requiredfoundation
 #: entry-meta.php:52 functions.php:494
