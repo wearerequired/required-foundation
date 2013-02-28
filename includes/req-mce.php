@@ -118,6 +118,10 @@ class REQ_Editor_Styles {
             array(
                 'title'  => __( 'Keyboard CMD', 'requiredfoundation' ),
                 'inline' => 'kbd'
+            ),
+            array(
+                'title'  => __( 'Cite', 'requiredfoundation' ),
+                'inline' => 'cite'
             )
         );
 
