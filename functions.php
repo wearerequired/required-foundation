@@ -404,7 +404,7 @@ if ( ! function_exists( 'required_posted_on' ) ) :
  */
 function required_posted_on() {
 	printf( __( '<h6>Posted by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span> on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a></h6>', 'requiredfoundation' ),
-		esc_url( get_permalink() ),
+		esc_url( get_day_link(get_the_time('Y'), get_the_time('m'), get_the_time('d')) ),
 		esc_attr( get_the_time() ),
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( get_the_date() ),
