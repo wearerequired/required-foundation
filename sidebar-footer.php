@@ -22,7 +22,7 @@
 ?>
 <!-- START: sidebar-footer.php -->
 <div id="supplementary" class="row">
-	<div class="twelve columns">
+	<div class="large-12 columns">
 		<hr />
 	</div>
 	<?php if ( is_active_sidebar( 'sidebar-footer-1' ) ) : ?>
@@ -32,13 +32,13 @@
 	<?php endif; ?>
 
 	<?php if ( is_active_sidebar( 'sidebar-footer-2' ) ) : ?>
-	<div id="second" class="widget-area <?php echo $required_c = (required_footer_sidebar_columns() == 'eight columns' ? 'four columns' : required_footer_sidebar_columns()); ?>">
+	<div id="second" class="widget-area <?php echo $required_c = (required_footer_sidebar_columns() == 'large-8 columns' ? 'large-4 columns' : required_footer_sidebar_columns()); ?>">
 		<?php dynamic_sidebar( 'sidebar-footer-2' ); ?>
 	</div><!-- #second .widget-area -->
 	<?php endif; ?>
 
 	<?php if ( is_active_sidebar( 'sidebar-footer-3' ) ) : ?>
-	<div id="third" class="widget-area <?php echo $required_c = (required_footer_sidebar_columns() == 'four columns reverse' ? 'eight columns' : required_footer_sidebar_columns()); ?>">
+	<div id="third" class="widget-area <?php echo $required_c = (required_footer_sidebar_columns() == 'large-4 columns reverse' ? 'large-8 columns' : required_footer_sidebar_columns()); ?>">
 		<?php dynamic_sidebar( 'sidebar-footer-3' ); ?>
 	</div><!-- #third .widget-area -->
 	<?php endif; ?>

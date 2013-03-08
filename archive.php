@@ -15,7 +15,7 @@ get_header(); ?>
 	<!-- Row for main content area -->
 	<div id="content" class="row">
 
-		<div id="main" class="eight columns" role="main">
+		<div id="main" class="large-8 columns" role="main">
 			<div class="post-box">
 			<?php if ( have_posts() ) : ?>
 
@@ -64,7 +64,7 @@ get_header(); ?>
 			</div>
 		</div>
 
-		<aside id="sidebar" class="four columns" role="complementary">
+		<aside id="sidebar" class="large-4 columns" role="complementary">
 			<div class="sidebar-box">
 				<?php get_sidebar(); ?>
 			</div>

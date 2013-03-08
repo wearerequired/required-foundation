@@ -39,7 +39,7 @@
 
 if ( ! defined( '__DIR__' ) ) define( '__DIR__' , dirname( __FILE__ ) );
 
-define( 'FOUNDATION_VERSION', '3.2.5' ); 	// Version of ZURB Foundation
+define( 'FOUNDATION_VERSION', '4.0.4' ); 	// Version of ZURB Foundation
 
 if ( ! isset( $content_width ) )
 	$content_width = 657;
@@ -300,31 +300,31 @@ endif; // required_content_nav
 function required_footer_sidebar_columns() {
 
 	// default value
-	$required_columns = 'four columns';
+	$required_columns = 'large-4 columns';
 
 	// only the first sidebar is active, go full-width
 	if (     is_active_sidebar( 'sidebar-footer-1' )
 		&& ! is_active_sidebar( 'sidebar-footer-2' )
 		&& ! is_active_sidebar( 'sidebar-footer-3') ) {
-		$required_columns = 'twelve columns';
+		$required_columns = 'large-12 columns';
 	}
 	// the first one is disabled, go half-half
 	else if (	! is_active_sidebar( 'sidebar-footer-1' )
 			 &&   is_active_sidebar( 'sidebar-footer-2')
 			 &&   is_active_sidebar( 'sidebar-footer-3' ) ) {
-		$required_columns = 'six columns';
+		$required_columns = 'large-6 columns';
 	}
 	// the last one is disabled, go eight-four
 	else if ( 	! is_active_sidebar( 'sidebar-footer-3' )
 			 &&   is_active_sidebar( 'sidebar-footer-2' )
 			 &&   is_active_sidebar( 'sidebar-footer-1' ) ) {
-		$required_columns = 'eight columns';
+		$required_columns = 'large-8 columns';
 	}
 	// the middle on is disabled, go four-eight
 	else if ( 	! is_active_sidebar( 'sidebar-footer-2' )
 			&&    is_active_sidebar( 'sidebar-footer-3' )
 			&& 	  is_active_sidebar( 'sidebar-footer-1' ) ) {
-		$required_columns = 'four columns reverse';
+		$required_columns = 'large-4 columns reverse';
 	}
 
 	return $required_columns;

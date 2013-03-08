@@ -11,7 +11,7 @@ get_header(); ?>
     <!-- Row for main content area -->
     <div id="content" class="row">
 
-        <div id="main" class="ten columns push-two" role="main">
+        <div id="main" class="large-10 columns push-2" role="main">
             <div class="post-box">
 
                 <?php while ( have_posts() ) : the_post(); ?>
@@ -30,7 +30,7 @@ get_header(); ?>
             </div>
         </div><!-- /#main -->
 
-        <aside id="side-nav" class="two columns pull-ten" role="complementary">
+        <aside id="side-nav" class="large-2 columns pull-10" role="complementary">
             <?php
                 if ( function_exists( 'required_side_nav' ) )
                     required_side_nav();
