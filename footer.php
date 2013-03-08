@@ -17,14 +17,14 @@
 				get_sidebar( 'footer' );
 			?>
 			<div id="footer" class="row" role="contentinfo">
-				<div class="twelve columns">
+				<div class="large-12 columns">
 					<hr />
 				</div>
-				<div class="four columns">
+				<div class="large-4 columns">
 					<?php do_action( 'required_credits' ); ?>
 					<p><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'requiredfoundation' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'requiredfoundation' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'requiredfoundation' ), 'WordPress' ); ?></a></p>
 				</div>
-				<div class="eight columns">
+				<div class="large-8 columns">
 					<?php wp_nav_menu( array(
 						'theme_location' => 'secondary',
 						'container' => false,
@@ -41,7 +41,11 @@
 		<script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
 		<script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 	<![endif]-->
-
+	<!--<script src="http://foundation.zurb.com/docs/assets/vendor/zepto.js"></script>-->
+	<script>
+		// This is some nasty hack, please someone comes up with a solution!
+		$ = jQuery;
+	</script>
 	<?php wp_footer(); ?>
 </body>
 </html>

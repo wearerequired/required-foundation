@@ -37,15 +37,15 @@
 
 		<!-- Row for blog navigation -->
 		<div class="row">
-			<header id="required-header" class="twelve columns required-header" role="banner">
+			<header id="required-header" class="large-12 columns required-header" role="banner">
 				<div class="row">
-					<hgroup class="eight columns">
+					<hgroup class="large-8 columns">
 						<h1 id="site-title">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 						</h1>
 						<h4 id="site-description" class="subheader"><?php bloginfo( 'description' ); ?></h4>
 					</hgroup>
-					<div class="four columns">
+					<div class="large-4 columns">
 						<?php
 							/**
 							 * Search form

@@ -12,7 +12,7 @@ get_header(); ?>
 	<!-- Row for main content area -->
 	<div id="content" class="row">
 
-		<div id="main" class="twelve columns" role="main">
+		<div id="main" class="large-12 columns" role="main">
 
 			<div class="post-box">
 

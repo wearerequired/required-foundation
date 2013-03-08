@@ -12,7 +12,7 @@ get_header(); ?>
 	<!-- Row for main content area -->
 	<div id="content" class="row">
 
-		<div id="main" class="eight columns push-four" role="main">
+		<div id="main" class="large-8 columns push-4" role="main">
 			<div class="post-box">
 
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -31,7 +31,7 @@ get_header(); ?>
 			</div>
 		</div><!-- /#main -->
 
-		<aside id="sidebar" class="four columns pull-eight" role="complementary">
+		<aside id="sidebar" class="large-4 columns pull-8" role="complementary">
 			<div class="sidebar-box">
 				<?php get_sidebar('left'); ?>
 			</div>
