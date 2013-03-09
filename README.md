@@ -24,6 +24,7 @@ Contributors
 
 Like every open project, we are happy that people are willing to offer time and code to create translations, test new version and so much more. Here are the people who did contribute so far:
 
+* Italian (Italian) it_IT translation files from [Paolo](http://www.ipertesti.it/)
 * Dutch (Dutch) nl_NL translation files from [Ilyes](http://qmodo.nl/)
 * French (French) fr_FR translation files from [Fabrice](http://www.ifab.ch/)
 * Spanish (Spanish) es_ES translation files from [gilkudik](https://github.com/gilkudik)
