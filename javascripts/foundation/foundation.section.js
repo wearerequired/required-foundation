@@ -6,7 +6,7 @@
   Foundation.libs.section = {
     name: 'section',
 
-    version : '4.0.3',
+    version : '4.0.5',
 
     settings : {
       deep_linking: false,
@@ -43,6 +43,19 @@
         self.resize.call(this);
       }, 30)).trigger('resize');
 
+      $('[data-section] .content').on('click.fndtn.section', function (e) {
+        e.stopPropagation();
+      });
+
+      $('*, html, body').on('click.fndtn.section', function (e) {
+        if ($(e.target).closest('.title').length < 1) {
+          $('[data-section].vertical-nav, [data-section].horizontal-nav')
+            .find('section, .section')
+            .removeClass('active')
+            .attr('style', '');
+        }
+      });
+
       this.settings.init = true;
     },
 
@@ -60,6 +73,7 @@
       if (section.hasClass('active')) {
         if (self.small(parent)
           || self.is_vertical(parent)
+          || self.is_horizontal(parent)
           || self.is_accordion(parent)) {
           section
             .removeClass('active')
@@ -73,8 +87,13 @@
             .removeClass('active')
             .attr('style', '');
 
-          section.css('padding-top', self.outerHeight(section.find('.title')) - 1);
+          section.css('padding-top', self.outerHeight(section.find('.title')));
         }
+
+        $('[data-section].vertical-nav, [data-section].horizontal-nav')
+            .find('section, .section')
+            .removeClass('active')
+            .attr('style', '');
 
         if (self.small(parent)) {
           section.attr('style', '');
@@ -100,6 +119,7 @@
             .attr('style', '');
         } else if (active_section.length < 1
           && !self.is_vertical($this)
+          && !self.is_horizontal($this)
           && !self.is_accordion($this)) {
           var first = $this.find('section, .section').first();
           first.addClass('active');
@@ -107,21 +127,31 @@
           if (self.small($this)) {
             first.attr('style', '');
           } else {
-            first.css('padding-top', self.outerHeight(first.find('.title')) - 1);
+            first.css('padding-top', self.outerHeight(first.find('.title')));
           }
         }
 
         if (self.small($this)) {
           active_section.attr('style', '');
         } else {
-          active_section.css('padding-top', self.outerHeight(active_section.find('.title')) - 1);
+          active_section.css('padding-top', self.outerHeight(active_section.find('.title')));
         }
         self.position_titles($this);
+
+        if (self.is_horizontal($this) && !self.small($this)) {
+          self.position_content($this);
+        } else {
+          self.position_content($this, false);
+        }
       });
     },
 
     is_vertical : function (el) {
       return el.hasClass('vertical-nav');
+    },
+
+    is_horizontal : function (el) {
+      return el.hasClass('horizontal-nav');
     },
 
     is_accordion : function (el) {
@@ -153,12 +183,39 @@
 
       if (typeof off === 'boolean') {
         titles.attr('style', '');
+
       } else {
         titles.each(function () {
           $(this).css('left', previous_width);
           previous_width += self.outerWidth($(this));
         });
       }
+    },
+
+    position_content : function (section, off) {
+      var titles = section.find('.title'),
+          content = section.find('.content'),
+          self = this;
+
+      if (typeof off === 'boolean') {
+        content.attr('style', '');
+        section.attr('style', '');
+      } else {
+        section.find('section, .section').each(function () {
+          var title = $(this).find('.title'),
+              content = $(this).find('.content');
+
+          content.css({left: title.position().left - 1, top: self.outerHeight(title) - 2});
+        });
+
+        // temporary work around for Zepto outerheight calculation issues.
+        if (typeof Zepto === 'function') {
+          section.height(this.outerHeight(titles.first()));
+        } else {
+          section.height(this.outerHeight(titles.first()) - 2);
+        }
+      }
+
     },
 
     small : function (el) {
