@@ -31,6 +31,10 @@
                             ) ),
                         ) );
                     ?>
+                        <ul class="right">
+                            <li class="divider hide-for-small"></li>
+                            <li class="has-form"><?php get_search_form(); ?></li>
+                        </ul>
                     </section>
                 </nav>
             <!-- </div> -->
