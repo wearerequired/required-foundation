@@ -95,8 +95,8 @@ div.attachment { text-align: center; }
 /* ---------------------------------------------------
    Make foundation work with WordPress
 --------------------------------------------------- */
-.row,
-.contain-to-grid .top-bar { width: 1030px; }
+
+
 
 .post-box .row > .columns.left {
 	margin-left: 0;
