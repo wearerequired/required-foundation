@@ -15,7 +15,24 @@ Foundation that is licensed under MIT (http://www.opensource.org/licenses/mit-li
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-@import url(stylesheets/style.css);
+/* -------------------------------------------------- 
+
+	This stylesheet will not be loaded in the front
+	end by default.
+	
+	If you are using Sass, the main stylesheet in
+	stylesheets/style.css and scss/style.scss. Style.scss has
+	already loaded the main Foundation Sass and Normalize.
+	
+	If you are using vanilla CSS to customize Reverie,
+	go to functions.php line 529 and follow the instruction
+	to enable CSS support, then start editing this file.
+	
+	Thanks to milohuang/Reverie(http://http:themefortress.com/reverie/)
+	
+-------------------------------------------------- */
+
+@import url(stylesheets/style.css); /* Do not Delete */
 
 /* --------------------------------------------------
    Table of Contents
