@@ -39,7 +39,7 @@
 
 if ( ! defined( '__DIR__' ) ) define( '__DIR__' , dirname( __FILE__ ) );
 
-define( 'FOUNDATION_VERSION', '3.2.5' ); 	// Version of ZURB Foundation
+define( 'FOUNDATION_VERSION', '4.0.4' ); 	// Version of ZURB Foundation
 
 if ( ! isset( $content_width ) )
 	$content_width = 657;
@@ -300,31 +300,31 @@ endif; // required_content_nav
 function required_footer_sidebar_columns() {
 
 	// default value
-	$required_columns = 'four columns';
+	$required_columns = 'large-4 columns';
 
 	// only the first sidebar is active, go full-width
 	if (     is_active_sidebar( 'sidebar-footer-1' )
 		&& ! is_active_sidebar( 'sidebar-footer-2' )
 		&& ! is_active_sidebar( 'sidebar-footer-3') ) {
-		$required_columns = 'twelve columns';
+		$required_columns = 'large-12 columns';
 	}
 	// the first one is disabled, go half-half
 	else if (	! is_active_sidebar( 'sidebar-footer-1' )
 			 &&   is_active_sidebar( 'sidebar-footer-2')
 			 &&   is_active_sidebar( 'sidebar-footer-3' ) ) {
-		$required_columns = 'six columns';
+		$required_columns = 'large-6 columns';
 	}
 	// the last one is disabled, go eight-four
 	else if ( 	! is_active_sidebar( 'sidebar-footer-3' )
 			 &&   is_active_sidebar( 'sidebar-footer-2' )
 			 &&   is_active_sidebar( 'sidebar-footer-1' ) ) {
-		$required_columns = 'eight columns';
+		$required_columns = 'large-8 columns';
 	}
 	// the middle on is disabled, go four-eight
 	else if ( 	! is_active_sidebar( 'sidebar-footer-2' )
 			&&    is_active_sidebar( 'sidebar-footer-3' )
 			&& 	  is_active_sidebar( 'sidebar-footer-1' ) ) {
-		$required_columns = 'four columns reverse';
+		$required_columns = 'large-4 columns reverse';
 	}
 
 	return $required_columns;
@@ -404,7 +404,7 @@ if ( ! function_exists( 'required_posted_on' ) ) :
  */
 function required_posted_on() {
 	printf( __( '<h6>Posted by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span> on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a></h6>', 'requiredfoundation' ),
-		esc_url( get_day_link(get_the_time('Y'), get_the_time('m'), get_the_time('d')) ),
+		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( get_the_date() ),
@@ -525,4 +525,7 @@ function required_archive_title () {
 	}
 }
 endif;
+// Thanks to milohuang/Reverie(http://http:themefortress.com/reverie/) for this bit and the two enqueuing files.
+require_once('lib/enqueue-sass.php'); // do all the cleaning and enqueue if you Sass to customize Required+ Foundation
+//require_once('lib/enqueue-css.php'); // to use CSS for customization, uncomment this line and comment the above Sass line
 ?>

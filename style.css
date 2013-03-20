@@ -7,13 +7,15 @@ Description: The <a href="http://themes.required.ch" title="required+ Foundation
 Tags: zurb, foundation, grid, custom-menu, custom-header, custom-background, widgets, shortcodes, orbit-js, reveal-js, responsive
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Version: 1.0.9
+Version: 1.1.0-wip
 Text Domain: requiredfoundation
 
 This theme, like WordPress, is licensed under the GPL. Except for the parts from
 Foundation that is licensed under MIT (http://www.opensource.org/licenses/mit-license.php).
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+@import url(stylesheets/style.css);
 
 /* --------------------------------------------------
    Table of Contents
@@ -95,8 +97,6 @@ div.attachment { text-align: center; }
 /* ---------------------------------------------------
    Make foundation work with WordPress
 --------------------------------------------------- */
-.row,
-.contain-to-grid .top-bar { width: 1030px; }
 
 .post-box .row > .columns.left {
 	margin-left: 0;
