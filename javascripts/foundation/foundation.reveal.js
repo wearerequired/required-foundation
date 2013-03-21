@@ -6,7 +6,7 @@
   Foundation.libs.reveal = {
     name: 'reveal',
 
-    version : '4.0.4',
+    version : '4.0.9',
 
     locked : false,
 
@@ -44,7 +44,7 @@
       }
 
       if (typeof method != 'string') {
-        if (!this.settings.init) this.events();
+        this.events();
 
         return this.settings.init;
       } else {
@@ -56,6 +56,7 @@
       var self = this;
 
       $(this.scope)
+        .off('.fndtn.reveal')
         .on('click.fndtn.reveal', '[data-reveal-id]', function (e) {
           e.preventDefault();
           if (!self.locked) {
@@ -64,6 +65,7 @@
           }
         })
         .on('click.fndtn.reveal touchend.click.fndtn.reveal', this.close_targets(), function (e) {
+          e.preventDefault();
           if (!self.locked) {
             self.locked = true;
             self.close.call(self, $(this).closest('.reveal-modal'));
@@ -75,6 +77,8 @@
         .on('close.fndtn.reveal', '.reveal-modal', this.settings.close)
         .on('closed.fndtn.reveal', '.reveal-modal', this.settings.closed)
         .on('closed.fndtn.reveal', '.reveal-modal', this.close_video);
+
+      return true;
     },
 
     open : function (target) {
@@ -84,29 +88,35 @@
         var modal = $(this.scope);
       }
 
-      var open_modal = $('.reveal-modal.open');
+      if (!modal.hasClass('open')) {
+        var open_modal = $('.reveal-modal.open');
 
-      if (!modal.data('css-top')) {
-        modal.data('css-top', parseInt(modal.css('top'), 10))
-          .data('offset', this.cache_offset(modal));
+        if (typeof modal.data('css-top') === 'undefined') {
+          modal.data('css-top', parseInt(modal.css('top'), 10))
+            .data('offset', this.cache_offset(modal));
+        }
+
+        modal.trigger('open');
+
+        if (open_modal.length < 1) {
+          this.toggle_bg(modal);
+        }
+        this.hide(open_modal, this.settings.css.open);
+        this.show(modal, this.settings.css.open);
       }
-
-      modal.trigger('open');
-
-      if (open_modal.length < 1) {
-        this.toggle_bg(modal);
-      }
-
-      this.toggle_modals(open_modal, modal);
     },
 
     close : function (modal) {
-      var modal = modal || $(this.scope);
-      this.locked = true;
-      var open_modal = $('.reveal-modal.open').not(modal);
-      modal.trigger('close');
-      this.toggle_bg(modal);
-      this.toggle_modals(open_modal, modal);
+
+      var modal = modal || $(this.scope),
+          open_modals = $('.reveal-modal.open');
+
+      if (open_modals.length > 0) {
+        this.locked = true;
+        modal.trigger('close');
+        this.toggle_bg(modal);
+        this.hide(open_modals, this.settings.css.close);
+      }
     },
 
     close_targets : function () {
@@ -119,20 +129,8 @@
       return base;
     },
 
-    toggle_modals : function (open_modal, modal) {
-      if (open_modal.length > 0) {
-        this.hide(open_modal, this.settings.css.close);
-      }
-
-      if (modal.filter(':visible').length > 0) {
-        this.hide(modal, this.settings.css.close);
-      } else {
-        this.show(modal, this.settings.css.open);
-      }
-    },
-
     toggle_bg : function (modal) {
-      if (this.settings.bg.length === 0) {
+      if ($('.reveal-modal-bg').length === 0) {
         this.settings.bg = $('<div />', {'class': this.settings.bgClass})
           .insertAfter(modal);
       }

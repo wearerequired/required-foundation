@@ -136,7 +136,7 @@ function required_load_scripts() {
 
     // offcanvas.js - depending on foundation.js
     wp_register_script(
-        'offcanvas-js',
+        'offcanvas',
         get_template_directory_uri() . '/javascripts/jquery.offcanvas.js',
         array( 'foundation' ),
         FOUNDATION_VERSION,
@@ -174,7 +174,7 @@ function required_load_scripts() {
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
         wp_enqueue_script( 'comment-reply' );
 
-    // Offcanvas CSS & JS only loaded on offcanvas template
+    // Offcanvas JS only loaded on offcanvas template
     if ( is_page_template( 'page-templates/off-canvas-page.php' ) ) {
         wp_enqueue_script( 'offcanvas' );
     }
@@ -193,9 +193,16 @@ add_action( 'wp_enqueue_scripts', 'required_load_scripts' );
 function required_load_styles() {
 
     wp_register_style(
+        'normalize', //handle
+        get_template_directory_uri() . '/stylesheets/normalize.css',
+        null,
+        FOUNDATION_VERSION //version
+    );
+
+    wp_register_style(
         'style', //handle
         get_stylesheet_uri(),
-        null,
+        array( 'normalize' ),
         required_get_theme_version() //version
     );
 
