@@ -19,11 +19,16 @@ As mentioned above, in addition to the parent theme there is a sample child them
 * required+ Starter (sample child theme): https://github.com/wearerequired/required-starter
 * required+ Shortcode Plugins: https://github.com/wearerequired/required-foundation-shortcodes
 
+Community contributed child themes:
+
+* [required+ Fwidth](http://bktnagency.com/2013/03/18/fwidth-a-100-width-child-theme-for-required-foundations-parent-theme-for-wordpress/) (by [James Bickerton BKTN](https://twitter.com/jamesmbickerton)): https://github.com/jamesbickerton/required-fwidth
+
 Contributors
 ============
 
 Like every open project, we are happy that people are willing to offer time and code to create translations, test new version and so much more. Here are the people who did contribute so far:
 
+* Serbian (Cyrillic) sr_RS translation files from [Vojkan](http://dobarsajt.com/), for Latin use the [srlatin plugin](http://kimmo.suominen.com/sw/srlatin/)
 * Italian (Italian) it_IT translation files from [Paolo](http://www.ipertesti.it/)
 * Dutch (Dutch) nl_NL translation files from [Ilyes](http://qmodo.nl/)
 * French (French) fr_FR translation files from [Fabrice](http://www.ifab.ch/)
