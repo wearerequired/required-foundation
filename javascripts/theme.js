@@ -1,5 +1,7 @@
 (function($) {
-
+    /**
+     * Let Foundation kick in!
+     */
     $(document).foundation();
 
     /**
