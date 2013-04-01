@@ -5537,7 +5537,7 @@ table tfoot tr td {
   max-width: 800px;
 }
 
-/* line 2, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 2, ../../required-starter/sass/_required-global.scss */
 #submit {
   border-style: solid;
   border-width: 1px;
@@ -5568,18 +5568,24 @@ table tfoot tr td {
   color: white;
 }
 
-/* line 8, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 8, ../../required-starter/sass/_required-global.scss */
 .entry-content ul, .entry-content ol, aside ul, aside ol {
   margin-left: 1em;
 }
 
-/* line 14, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 14, ../../required-starter/sass/_required-global.scss */
+.entry-content ul.clearing-thumbs, aside ul.clearing-thumbs {
+  list-style: none;
+  margin-left: 0;
+}
+
+/* line 21, ../../required-starter/sass/_required-global.scss */
 ul.page-numbers {
   display: block;
   height: 1.5em;
   margin-left: -0.3125em;
 }
-/* line 19, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 26, ../../required-starter/sass/_required-global.scss */
 ul.page-numbers li {
   display: block;
   float: left;
@@ -5588,18 +5594,18 @@ ul.page-numbers li {
   font-size: 0.875em;
   margin-left: 0.3125em;
 }
-/* line 27, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 34, ../../required-starter/sass/_required-global.scss */
 ul.page-numbers li a {
   display: block;
   padding: 0.0625em 0.4375em 0.0625em;
   color: #999999;
 }
-/* line 34, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 41, ../../required-starter/sass/_required-global.scss */
 ul.page-numbers li:hover a,
 ul.page-numbers li a:focus {
   background: #e6e6e6;
 }
-/* line 36, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 43, ../../required-starter/sass/_required-global.scss */
 ul.page-numbers li span.current {
   background: #2ba6cb;
   color: white;
@@ -5608,66 +5614,87 @@ ul.page-numbers li span.current {
   display: block;
   padding: 0.0625em 0.4375em 0.0625em;
 }
-/* line 45, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 52, ../../required-starter/sass/_required-global.scss */
 ul.page-numbers li span.current:hover, ul.page-numbers li span.current:focus {
   background: #2ba6cb;
 }
 
-/* line 50, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 57, ../../required-starter/sass/_required-global.scss */
 abbr, acronym, dfn {
   cursor: help;
   border-bottom: 1px dotted #e6e6e6;
 }
 
-/* line 54, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 61, ../../required-starter/sass/_required-global.scss */
 .alignleft {
   float: left;
   margin: 5px 15px 5px 0;
 }
 
-/* line 58, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 65, ../../required-starter/sass/_required-global.scss */
 .alignright {
   float: right;
   margin: 5px 0 5px 15px;
 }
 
-/* line 62, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 69, ../../required-starter/sass/_required-global.scss */
 .aligncenter {
   text-align: center;
 }
 
-/* line 66, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 73, ../../required-starter/sass/_required-global.scss */
 .entry-meta,
 .page-link {
+  *zoom: 1;
+}
+/* line 184, /Library/Ruby/Gems/1.8/gems/zurb-foundation-4.0.9/scss/foundation/_foundation-global.scss */
+.entry-meta:before, .entry-meta:after,
+.page-link:before,
+.page-link:after {
+  content: " ";
+  display: table;
+}
+/* line 185, /Library/Ruby/Gems/1.8/gems/zurb-foundation-4.0.9/scss/foundation/_foundation-global.scss */
+.entry-meta:after,
+.page-link:after {
   clear: both;
 }
 
-/* line 69, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 76, ../../required-starter/sass/_required-global.scss */
 .nav-single {
-  clear: both;
+  *zoom: 1;
   line-height: 2;
   overflow: hidden;
 }
+/* line 184, /Library/Ruby/Gems/1.8/gems/zurb-foundation-4.0.9/scss/foundation/_foundation-global.scss */
+.nav-single:before, .nav-single:after {
+  content: " ";
+  display: table;
+}
+/* line 185, /Library/Ruby/Gems/1.8/gems/zurb-foundation-4.0.9/scss/foundation/_foundation-global.scss */
+.nav-single:after {
+  clear: both;
+}
 
-/* line 74, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 81, ../../required-starter/sass/_required-global.scss */
 .nav-previous {
   float: left;
   width: 50%;
 }
 
-/* line 78, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 85, ../../required-starter/sass/_required-global.scss */
 .nav-next {
   float: right;
   width: 50%;
   text-align: right;
 }
 
-/* line 83, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 90, ../../required-starter/sass/_required-global.scss */
 div.attachment {
   text-align: center;
 }
 
-/* line 89, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 96, ../../required-starter/sass/_required-global.scss */
 .format-image .entry-meta h6,
 .format-link .entry-meta h6,
 .format-quote .entry-meta h6,
@@ -5676,110 +5703,95 @@ div.attachment {
   display: inline-block;
 }
 
-/* line 90, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 97, ../../required-starter/sass/_required-global.scss */
 .entry-meta .label {
   float: right;
   text-transform: uppercase;
-  margin: 15px 0;
+  margin: 0.9375em 0;
   font-style: italic;
 }
 
-/* line 92, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 99, ../../required-starter/sass/_required-global.scss */
 .format-status .entry-header img {
   float: left;
-  margin: 5px 15px 0 0;
+  margin: 0.3125em 0.9375em 0 0;
 }
 
-/* line 94, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 101, ../../required-starter/sass/_required-global.scss */
 .format-link .entry-content a {
   font-size: 1.5em;
   line-height: 1;
 }
 
-/* ---------------------------------------------------
-   Make foundation work with WordPress
---------------------------------------------------- */
-/* line 103, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
-#supplementary {
-  padding-top: 20px;
-}
-
-/* line 106, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 107, ../../required-starter/sass/_required-global.scss */
+#supplementary,
 #footer {
-  padding-top: 20px;
+  padding-top: 1.25em;
 }
 
-/* line 109, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 111, ../../required-starter/sass/_required-global.scss */
 footer > div.row:last-child {
-  margin-top: 80px;
+  margin-top: 5em;
   border-top: solid 1px #E6E6E6;
-  padding-top: 20px;
+  padding-top: 1.25em;
 }
 
-/* line 114, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 116, ../../required-starter/sass/_required-global.scss */
 footer > div.row:first-child {
-  margin-bottom: -80px;
-  padding-top: 20px;
+  margin-bottom: -5em;
+  padding-top: 1.25em;
 }
 
-/* line 118, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
-.required-header .header-img {
-  display: block;
-  margin: 30px 0;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #E6E6E6;
-}
-
-/* line 124, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 120, ../../required-starter/sass/_required-global.scss */
 .entry-meta {
   font-size: 0.875em;
 }
 
-/* line 127, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 123, ../../required-starter/sass/_required-global.scss */
 article footer.entry-meta {
-  margin: 30px 0;
-  padding-bottom: 30px;
+  margin: 1.875em 0;
+  padding-bottom: 1.875em;
   border-bottom: 1px solid #E6E6E6;
 }
 
-/* line 132, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 128, ../../required-starter/sass/_required-global.scss */
 article:last-child footer.entry-meta {
   border-bottom: none;
 }
 
-/* line 135, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 131, ../../required-starter/sass/_required-global.scss */
 table {
   width: 100%;
 }
 
-/* line 138, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 134, ../../required-starter/sass/_required-global.scss */
 ol.commentlist {
   margin-left: 0;
 }
 
-/* line 139, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 135, ../../required-starter/sass/_required-global.scss */
 .commentlist li {
   list-style: none;
 }
 
-/* line 140, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 136, ../../required-starter/sass/_required-global.scss */
 article.comment {
-  margin: 30px 0;
+  margin: 1.875em 0;
 }
 
-/* line 141, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 137, ../../required-starter/sass/_required-global.scss */
 .comment-meta img {
   float: left;
   margin: 5px 10px 5px 0;
 }
 
-/* line 142, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 138, ../../required-starter/sass/_required-global.scss */
 #comment {
-  min-height: 120px;
+  min-height: 7.5em;
 }
 
 /* Off canvas layout stuff */
-/* line 145, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 141, ../../required-starter/sass/_required-global.scss */
 .off-canvas [role="main"]:before {
   background: transparent;
   -webkit-box-shadow: none;
@@ -5787,53 +5799,60 @@ article.comment {
   box-shadow: none;
 }
 
-/* line 151, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 147, ../../required-starter/sass/_required-global.scss */
 .js .off-canvas [role="main"] {
   background: transparent;
 }
 
-@media all and (min-width: 768px) {
-  /* line 155, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+/* line 151, ../../required-starter/sass/_required-global.scss */
+body.off-canvas.admin-bar {
+  padding-top: 1.75em;
+}
+
+/**
+ * Off Canvas specific layout
+ */
+/* line 158, ../../required-starter/sass/_required-global.scss */
+.sidebar-menu {
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+/* line 159, ../../required-starter/sass/_required-global.scss */
+.off-canvas .menu-action {
+  float: left;
+  position: relative;
+  top: 1px;
+  margin-top: 0;
+  padding-left: 0.9375em;
+}
+
+/* line 160, ../../required-starter/sass/_required-global.scss */
+.off-canvas .menu-action .button.small {
+  padding: 8px;
+  margin: 0;
+}
+
+/* line 161, ../../required-starter/sass/_required-global.scss */
+.off-canvas .menu-action .button.small svg {
+  opacity: 0.5;
+}
+
+/* line 162, ../../required-starter/sass/_required-global.scss */
+.js .off-canvas [role="complementary"] {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 48em) {
+  /* line 165, ../../required-starter/sass/_required-global.scss */
   .js .off-canvas [role="complementary"] {
     width: 20%;
-    margin-top: 14px;
+    margin-top: 0.875em;
   }
 
-  /* line 156, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
+  /* line 166, ../../required-starter/sass/_required-global.scss */
   .js .off-canvas [role="main"] {
     width: 80%;
-  }
-}
-@media handheld, only screen and (max-width: 767px) {
-  /* line 160, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
-  .sidebar-menu {
-    border-bottom: 1px solid #ddd;
-    position: relative;
-  }
-
-  /* line 161, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
-  .off-canvas .menu-action {
-    float: left;
-    position: relative;
-    top: 1px;
-    margin-top: 0;
-    padding-left: 15px;
-  }
-
-  /* line 162, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
-  .off-canvas .menu-action .button.small {
-    padding: 8px;
-    margin: 0;
-  }
-
-  /* line 163, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
-  .off-canvas .menu-action .button.small svg {
-    opacity: 0.5;
-  }
-
-  /* line 164, /Users/neverything/Sites/required-projects/required-foundation/wordpress/wp-content/themes/required-starter/sass/_required-global.scss */
-  .js .off-canvas [role="complementary"] {
-    margin-top: 0;
   }
 }
 /* ---------------------------------------------------

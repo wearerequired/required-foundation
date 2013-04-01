@@ -42,10 +42,6 @@
 		<script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 	<![endif]-->
 	<!--<script src="http://foundation.zurb.com/docs/assets/vendor/zepto.js"></script>-->
-	<script>
-		// This is some nasty hack, please someone comes up with a solution!
-		$ = jQuery;
-	</script>
 	<?php wp_footer(); ?>
 </body>
 </html>
