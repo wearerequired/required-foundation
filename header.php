@@ -34,27 +34,17 @@
 <body <?php body_class(); ?>>
 	<!-- Start the main container -->
 	<div id="container" class="container" role="document">
-
+		<?php get_template_part( 'nav' ); ?>
 		<!-- Row for blog navigation -->
 		<div class="row">
 			<header id="required-header" class="large-12 columns required-header" role="banner">
-				<div class="row">
-					<hgroup class="large-8 columns">
-						<h1 id="site-title">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-						</h1>
-						<h4 id="site-description" class="subheader"><?php bloginfo( 'description' ); ?></h4>
-					</hgroup>
-					<div class="large-4 columns">
-						<?php
-							/**
-							 * Search form
-							 */
-							get_search_form();
-						?>
-					</div>
-				</div>
-				<?php get_template_part( 'nav' ); ?>
+				<hgroup>
+					<h1 id="site-title">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					</h1>
+					<h4 id="site-description" class="subheader"><?php bloginfo( 'description' ); ?></h4>
+				</hgroup>
 				<?php get_template_part( 'custom-header' ); ?>
+				<hr />
 			</header>
 		</div><!-- // header.php -->

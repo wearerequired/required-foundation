@@ -73,7 +73,6 @@ function required_get_theme_version( $parent = true ) {
  * @package required+ Foundation
  * @since required+ Foundation 0.1.0
  */
-require( get_template_directory() . '/includes/req-custom-header.php' );	// optional custom header support
 require( get_template_directory() . '/includes/req-foundation.php' ); 		// make foundation work in WordPress
 require( get_template_directory() . '/includes/req-scripts.php' ); 			// register the scripts we need the correct way
 require( get_template_directory() . '/includes/req-shortcodes.php' ); 		// we got wonderful shortcodes for you
@@ -356,7 +355,7 @@ function required_comment( $comment, $args, $depth ) {
 	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
 		<article id="comment-<?php comment_ID(); ?>" class="comment panel">
 			<header class="comment-meta">
-				<div class="comment-author vcard">
+				<div class="comment-author">
 					<?php
 						$avatar_size = 48;
 
@@ -374,7 +373,7 @@ function required_comment( $comment, $args, $depth ) {
 						);
 					?>
 
-				</div><!-- .comment-author .vcard -->
+				</div><!-- .comment-author -->
 
 				<?php if ( $comment->comment_approved == '0' ) : ?>
 					<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'requiredfoundation' ); ?></em>
@@ -403,7 +402,7 @@ if ( ! function_exists( 'required_posted_on' ) ) :
  * @since required+ Foundation 0.3.0
  */
 function required_posted_on() {
-	printf( __( '<h6>Posted by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span> on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a></h6>', 'requiredfoundation' ),
+	printf( __( '<h6>Posted by <span class="author"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span> on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a></h6>', 'requiredfoundation' ),
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
 		esc_attr( get_the_date( 'c' ) ),
@@ -486,7 +485,7 @@ function required_archive_title () {
 		if ( get_the_author_meta( 'description' ) ) : ?>
 		<header class="page-header">
 			<div id="author-info" class="panel clearfix">
-				<h3 class="page-title author"><?php printf( __( 'Author Archives: %s', 'requiredfoundation' ), '<span class="vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( "ID" ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' ); ?></h3>
+				<h3 class="page-title author"><?php printf( __( 'Author Archives: %s', 'requiredfoundation' ), '<span><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( "ID" ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' ); ?></h3>
 				<div id="author-avatar">
 					<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'required_author_bio_avatar_size', 72 ) ); ?>
 				</div><!-- #author-avatar -->
@@ -497,7 +496,7 @@ function required_archive_title () {
 			</div><!-- #entry-author-info -->
 		<?php else : ?>
 		<header class="page-header">
-			<h3 class="page-title author"><?php printf( __( 'Author Archives: %s', 'requiredfoundation' ), '<span class="vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( "ID" ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' ); ?></h3>
+			<h3 class="page-title author"><?php printf( __( 'Author Archives: %s', 'requiredfoundation' ), '<span><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( "ID" ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' ); ?></h3>
 		</header>
 		<?php endif;
 	}

@@ -14,10 +14,12 @@
  *
  * @return string
  */
-function required_pagination() {
+function required_pagination( $center = false ) {
 	global $wp_query;
 
 	$big = 999999999; // This needs to be an unlikely integer
+
+    $centered = $center == true ? ' pagination-centered' : '';
 
 	// For more options and info view the docs for paginate_links()
 	// http://codex.wordpress.org/Function_Reference/paginate_links
@@ -34,7 +36,7 @@ function required_pagination() {
 
 	// Display the pagination if more than one page is found
 	if ( $paginate_links ) {
-		echo '<div class="required-pagination">';
+		echo '<div class="required-pagination' . $centered . '">';
 		echo $paginate_links;
 		echo '</div><!--// end .pagination -->';
 	}

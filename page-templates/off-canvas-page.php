@@ -46,13 +46,10 @@ get_header(); ?>
         </section><!-- /#main -->
 
         <section id="sidebar" role="complementary">
+
             <?php
                 if ( function_exists( 'required_side_nav' ) ) {
-                    $args = array(
-                        'before' => '<ul class="tabs vertical">',
-                        'after' => '</ul>',
-                    );
-                    required_side_nav( $args );
+                    required_side_nav( array( 'show_home' => true ) );
                 }
             ?>
         </section><!-- /#sidebar -->
