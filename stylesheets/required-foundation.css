@@ -4908,6 +4908,10 @@ article.comment {
   margin-top: -1.5em;
 }
 
+.top-bar .button {
+  padding: 0 inherit;
+}
+
 /* Off canvas layout stuff */
 .off-canvas [role="main"]:before {
   background: transparent;

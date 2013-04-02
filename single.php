@@ -24,7 +24,7 @@ get_header(); ?>
 
 					<?php get_template_part( 'content', get_post_format() ); ?>
 
-					<?php required_single_content_nav( 'nav-below' ); ?>
+					<?php required_single_content_nav(); ?>
 
 					<?php comments_template( '', true ); ?>
 

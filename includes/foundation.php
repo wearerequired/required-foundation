@@ -274,7 +274,6 @@ function required_side_nav( $nav_args = '' ) {
 
 		$output = $nav_args['before'] . $children . $nav_args['after'];
 
-
 		// Replace the output if we are on a definition list
 		if ( $nav_args['item_type'] != 'li' ) {
 
