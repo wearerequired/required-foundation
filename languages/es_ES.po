@@ -284,7 +284,7 @@ msgstr ""
 "<p>Este sitio utilize el tema <a href=\"http://themes.required.ch/\" title="
 "\"required+ Themes\">required+ Foundation</a>. Basado en el asombroso <a "
 "href=\"http://foundation.zurb.com/\" title=\"Rapid prototyping and building "
-"library from ZURB.\">Foundation</a> Framework desarrollado pro los humildes "
+"library from ZURB.\">Foundation</a> Framework desarrollado por los humildes "
 "amigos de <a href=\"http://www.zurb.com/\" title=\"Design for people\">ZURB</"
 "a>.</p>"
 
