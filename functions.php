@@ -38,14 +38,14 @@
  */
 
 // Set the current Foundation version
-define( 'FOUNDATION_VERSION', '4.0.9' );
+define( 'FOUNDATION_VERSION', '4.1.2' );
 
 // Define __DIR__
 if ( ! defined( '__DIR__' ) ) define( '__DIR__' , dirname( __FILE__ ) );
 
 // Set $content_width;
 if ( ! isset( $content_width ) )
-	$content_width = 657;
+	$content_width = 637;
 
 /**
  * Make Foundation work with WordPress

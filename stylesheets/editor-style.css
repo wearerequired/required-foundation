@@ -1803,7 +1803,9 @@ kbd {
 
 /* Inline Lists */
 .inline-list {
-  margin: 0 0 1.0625em -1.375em;
+  margin: 0 auto 1.0625em auto;
+  margin-left: -1.375em;
+  margin-right: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
@@ -2123,6 +2125,7 @@ table tfoot tr td {
 }
 .tooltip > .nub {
   display: block;
+  left: 5px;
   position: absolute;
   width: 0;
   height: 0;
@@ -2179,12 +2182,12 @@ table tfoot tr td {
 /* Foundation Dropdowns */
 .f-dropdown {
   position: absolute;
-  left: -9999px;
   top: -9999px;
   list-style: none;
+  padding: 1.25em;
   width: 100%;
-  max-height: none;
   height: auto;
+  max-height: none;
   background: white;
   border: solid 1px #cccccc;
   font-size: 16px;
@@ -2245,7 +2248,6 @@ table tfoot tr td {
 }
 .f-dropdown.content {
   position: absolute;
-  left: -9999px;
   top: -9999px;
   list-style: none;
   padding: 1.25em;
@@ -2275,4 +2277,8 @@ table tfoot tr td {
 }
 .f-dropdown.large {
   max-width: 800px;
+}
+
+ul, ol {
+  margin-left: 1.5em;
 }
