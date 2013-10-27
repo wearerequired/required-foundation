@@ -6,7 +6,7 @@
   Foundation.libs.clearing = {
     name : 'clearing',
 
-    version : '4.1.2',
+    version: '4.3.2',
 
     settings : {
       templates : {
@@ -33,7 +33,7 @@
         options = $.extend(true, this.settings, method);
       }
 
-      if (typeof method != 'string') {
+      if (typeof method !== 'string') {
         $(this.scope).find('ul[data-clearing]').each(function () {
           var $el = $(this),
               options = options || {},
@@ -79,9 +79,9 @@
 
             // if clearing is open and the current image is
             // clicked, go to the next image in sequence
-            if (target.hasClass('visible') 
-              && current[0] === target[0] 
-              && next.length > 0 && self.is_open(current)) {
+            if (target.hasClass('visible') && 
+              current[0] === target[0] && 
+              next.length > 0 && self.is_open(current)) {
               target = next;
               image = target.find('img');
             }
@@ -101,7 +101,7 @@
           function (e) { this.keydown(e) }.bind(this));
 
       $(window).on('resize.fndtn.clearing',
-        function (e) { this.resize() }.bind(this));
+        function () { this.resize() }.bind(this));
 
       this.settings.init = true;
       return this;
@@ -214,7 +214,7 @@
           }($(el))), container, visible_image;
 
       if (el === e.target && root) {
-        container = root.find('div').first(),
+        container = root.find('div').first();
         visible_image = container.find('.visible-img');
         this.settings.prev_index = 0;
         root.find('ul[data-clearing]')
@@ -228,7 +228,7 @@
     },
 
     is_open : function (current) {
-      return current.parent().attr('style').length > 0;
+      return current.parent().prop('style').length > 0;
     },
 
     keydown : function (e) {
@@ -317,7 +317,11 @@
     // image loading and preloading
 
     load : function ($image) {
-      var href = $image.parent().attr('href');
+      if ($image[0].nodeName === "A") {
+        var href = $image.attr('href');
+      } else {
+        var href = $image.parent().attr('href');
+      }
 
       this.preload($image);
 
@@ -384,7 +388,7 @@
 
       if (caption) {
         container
-          .text(caption)
+          .html(caption)
           .show();
       } else {
         container

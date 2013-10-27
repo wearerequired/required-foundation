@@ -18,7 +18,7 @@ function required_load_scripts() {
         'modernizr-custom', //handle
         get_template_directory_uri() . '/javascripts/vendor/custom.modernizr.js', //source
         null, //dependencies
-        FOUNDATION_VERSION, //version
+        '2.6.2', //version
         false
     );
 
@@ -30,10 +30,18 @@ function required_load_scripts() {
 	    true //run in footer
     );
 
+    wp_register_script(
+        'foundation-abide', //handle
+        get_template_directory_uri() . '/javascripts/foundation/foundation.abide.js', //source
+        array( 'foundation' ), //dependencies
+        FOUNDATION_VERSION, //version
+        true //run in footer
+    );
+
 	wp_register_script(
         'foundation-alerts', //handle
         get_template_directory_uri() . '/javascripts/foundation/foundation.alerts.js', //source
-        array('foundation'), //dependencies
+        array( 'foundation' ), //dependencies
         FOUNDATION_VERSION, //version
         true //run in footer
     );
@@ -41,7 +49,7 @@ function required_load_scripts() {
     wp_register_script(
         'foundation-clearing', //handle
         get_template_directory_uri() . '/javascripts/foundation/foundation.clearing.js', //source
-        array('foundation'), //dependencies
+        array( 'foundation' ), //dependencies
         FOUNDATION_VERSION, //version
         true //run in footer
     );
@@ -49,7 +57,7 @@ function required_load_scripts() {
     wp_register_script(
         'foundation-cookie', //handle
         get_template_directory_uri() . '/javascripts/foundation/foundation.cookie.js', //source
-        array('foundation'), //dependencies
+        array( 'foundation' ), //dependencies
         FOUNDATION_VERSION, //version
         true //run in footer
     );
@@ -57,7 +65,7 @@ function required_load_scripts() {
     wp_register_script(
         'foundation-dropdown', //handle
         get_template_directory_uri() . '/javascripts/foundation/foundation.dropdown.js', //source
-        array('foundation'), //dependencies
+        array( 'foundation' ), //dependencies
         FOUNDATION_VERSION, //version
         true //run in footer
     );
@@ -65,7 +73,15 @@ function required_load_scripts() {
     wp_register_script(
         'foundation-forms', //handle
         get_template_directory_uri() . '/javascripts/foundation/foundation.forms.js', //source
-        array('foundation'), //dependencies
+        array( 'foundation' ), //dependencies
+        FOUNDATION_VERSION, //version
+        true //run in footer
+    );
+
+    wp_register_script(
+        'foundation-interchange', //handle
+        get_template_directory_uri() . '/javascripts/foundation/foundation.interchange.js', //source
+        array( 'foundation' ), //dependencies
         FOUNDATION_VERSION, //version
         true //run in footer
     );
@@ -73,7 +89,7 @@ function required_load_scripts() {
     wp_register_script(
         'foundation-joyride', //handle
         get_template_directory_uri() . '/javascripts/foundation/foundation.joyride.js', //source
-        array('foundation'), //dependencies
+        array( 'foundation' ), //dependencies
         FOUNDATION_VERSION, //version
         true //run in footer
     );
@@ -81,7 +97,7 @@ function required_load_scripts() {
     wp_register_script(
         'foundation-magellan', //handle
         get_template_directory_uri() . '/javascripts/foundation/foundation.magellan.js', //source
-        array('foundation'), //dependencies
+        array( 'foundation' ), //dependencies
         FOUNDATION_VERSION, //version
         true //run in footer
     );
@@ -89,7 +105,7 @@ function required_load_scripts() {
     wp_register_script(
         'foundation-orbit', //handle
         get_template_directory_uri() . '/javascripts/foundation/foundation.orbit.js', //source
-        array('foundation'), //dependencies
+        array( 'foundation' ), //dependencies
         FOUNDATION_VERSION, //version
         true //run in footer
     );
@@ -97,7 +113,7 @@ function required_load_scripts() {
     wp_register_script(
         'foundation-placeholder', //handle
         get_template_directory_uri() . '/javascripts/foundation/foundation.placeholder.js', //source
-        array('foundation'), //dependencies
+        array( 'foundation' ), //dependencies
         FOUNDATION_VERSION, //version
         true //run in footer
     );
@@ -105,7 +121,7 @@ function required_load_scripts() {
     wp_register_script(
         'foundation-reveal', //handle
         get_template_directory_uri() . '/javascripts/foundation/foundation.reveal.js', //source
-        array('foundation'), //dependencies
+        array( 'foundation' ), //dependencies
         FOUNDATION_VERSION, //version
         true //run in footer
     );
@@ -113,7 +129,7 @@ function required_load_scripts() {
     wp_register_script(
         'foundation-section', //handle
         get_template_directory_uri() . '/javascripts/foundation/foundation.section.js', //source
-        array('foundation'), //dependencies
+        array( 'foundation' ), //dependencies
         FOUNDATION_VERSION, //version
         true //run in footer
     );
@@ -121,7 +137,7 @@ function required_load_scripts() {
     wp_register_script(
         'foundation-tooltips', //handle
         get_template_directory_uri() . '/javascripts/foundation/foundation.tooltips.js', //source
-        array('foundation'), //dependencies
+        array( 'foundation' ), //dependencies
         FOUNDATION_VERSION, //version
         true //run in footer
     );
@@ -129,7 +145,7 @@ function required_load_scripts() {
     wp_register_script(
         'foundation-topbar', //handle
         get_template_directory_uri() . '/javascripts/foundation/foundation.topbar.js', //source
-        array('foundation'), //dependencies
+        array( 'foundation' ), //dependencies
         FOUNDATION_VERSION, //version
         true //run in footer
     );
@@ -149,6 +165,7 @@ function required_load_scripts() {
         get_template_directory_uri() . '/javascripts/theme.js',
         array(
             'foundation',
+            'foundation-abide',
             'foundation-alerts',
             'foundation-topbar',
             'foundation-tooltips',
@@ -157,6 +174,7 @@ function required_load_scripts() {
             'foundation-placeholder',
             'foundation-orbit',
             'foundation-magellan',
+            'foundation-interchange',
             'foundation-joyride',
             'foundation-forms',
             'foundation-dropdown',

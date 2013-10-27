@@ -38,7 +38,7 @@
  */
 
 // Set the current Foundation version
-define( 'FOUNDATION_VERSION', '4.1.2' );
+define( 'FOUNDATION_VERSION', '4.3.2' );
 
 // Define __DIR__
 if ( ! defined( '__DIR__' ) ) define( '__DIR__' , dirname( __FILE__ ) );
