@@ -1,4 +1,5 @@
 (function($) {
+
     /**
      * Let Foundation kick in!
      */
@@ -13,9 +14,11 @@
             $(this).remove();
         });
     });
+
     /**
      * Add a wrapper to all the videos with an iframe embed
      */
     $('iframe[src*="vimeo.com"]').wrap('<div class="flex-video vimeo widescreen" />');
     $('iframe[src*="youtube.com"]').wrap('<div class="flex-video widescreen" />');
+
 }(jQuery));
