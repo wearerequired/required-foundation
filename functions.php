@@ -44,6 +44,7 @@ define( 'FOUNDATION_VERSION', '3.2.5' ); 	// Version of ZURB Foundation
 if ( ! isset( $content_width ) )
 	$content_width = 657;
 
+if ( ! function_exists( 'required_get_theme_version' ) ) :
 /**
  * Return the current theme version or parent theme version
  *
@@ -65,6 +66,7 @@ function required_get_theme_version( $parent = true ) {
 
 	return $current_theme->Version;
 }
+endif;
 
 /**
  * We add our own nice functions to the theme if you want to change let's say req-scripts.php
