@@ -1,0 +1,13 @@
+{
+	"name":        "wearerequired/required-foundation",
+	"description": "Discontinued WordPress parent theme",
+	"type":        "wordpress-theme",
+	"authors":     [
+		{
+			"name":     "required+",
+			"email":    "support@required.ch",
+			"homepage": "http://required.ch"
+		}
+	],
+	"require":     {}
+}
