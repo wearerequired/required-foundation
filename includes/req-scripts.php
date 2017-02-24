@@ -62,7 +62,7 @@ function required_load_scripts() {
         'required-foundation-css', //handle
         get_stylesheet_uri(),
         array( 'foundation-css' ),
-        required_get_theme_version() //version
+        required_get_theme_version( false ) //version
     );
 
     // Off Canvas Styles, only used on certain page templates
